@@ -7,6 +7,11 @@ public class hw_ex1 {
     public static void main(String[] args) {
         int[] arr = {5, 3, 7, 8, 9, 17, 6, 12, 17, 18, 19, 10, 11, 14, 24, 29, 21, 27, 26};
 
+        testMetod(arr);
+
+    }
+
+    private static void testMetod(int[] arr) {
         int w = Arrays.stream(arr)
                 .map(el -> {
                     if (el % 2 == 0) {
@@ -20,6 +25,5 @@ public class hw_ex1 {
                 .reduce((el1, el2) -> el1 + el2)
                 .getAsInt();
         System.out.println(w);
-
     }
 }
