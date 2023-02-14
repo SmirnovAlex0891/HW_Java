@@ -9,8 +9,7 @@ import java.util.List;
 public class test {
     public static void main(String[] args) {
         String path = "xxx.jpg";
-        String path2 = "xxx.jpg";
-        Reader_file reader = new Reader_file();
+        ReaderFile reader = new ReaderFile();
         List<Integer> list1 = reader.read_file(path);
         List<Integer> list2 = reader.read_file(path);
 
@@ -23,15 +22,10 @@ public class test {
             }
             i++;
         }
-
-//        for (int i = 0; i < 1000; i++) {
-//            if (list1.get(i) != list2.get(i))
-//            System.out.println(list1.get(i) + " !!!! " + list2.get(i));
-//        }
-
     }
 }
-class Reader_file {
+
+class ReaderFile {
     public List<Integer> read_file(String path) {
         List<Integer> list = new ArrayList<>();
         int ch;
@@ -39,7 +33,7 @@ class Reader_file {
             while ((ch = inputStream.read()) > -1) {
                 list.add(ch);
             }
-        }catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
         return list;

@@ -8,29 +8,13 @@ import java.util.List;
 public class test2 {
     public static void main(String[] args) {
         String path = "xxx.jpg";
-        String path2 = "xxx.jpg";
-        Reader_file_2 reader = new Reader_file_2();
+        String path2 = "yyy.jpg";
+        ReaderFileNew reader = new ReaderFileNew();
         reader.read_file(path, path2);
-        //List<Integer> list1 = reader.read_file(path, path2);
-        //List<Integer> list2 = reader.read_file(path);
-
-//        Iterator iteratorList1 = list1.iterator();
-//        Iterator iteratorList2 = list2.iterator();
-//
-//        while (iteratorList1.hasNext() && iteratorList2.hasNext()) {
-//            if (iteratorList1 != iteratorList2) {
-//                System.out.println("nnnnnnnnnnnnnn");
-//            }
-//        }
-
-//        for (int i = 0; i < 1000; i++) {
-//            if (list1.get(i).equals(list2.get(i)))
-//            System.out.println(list1.get(i) + " !!!! " + list2.get(i));
-//        }
-
     }
 }
-class Reader_file_2 {
+
+class ReaderFileNew {
     public void read_file(String path, String path2) {
         List<Integer> list = new ArrayList<>();
         int ch1;
@@ -44,7 +28,7 @@ class Reader_file_2 {
                 i++;
             }
             System.out.println("DONE");
-        }catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
