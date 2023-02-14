@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class test2 {
+public class TestReadAndCompareFile {
     public static void main(String[] args) {
         String path = "xxx.jpg";
         String path2 = "yyy.jpg";

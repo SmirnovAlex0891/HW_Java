@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class test {
+public class TestReadFile {
     public static void main(String[] args) {
         String path = "xxx.jpg";
         ReaderFile reader = new ReaderFile();
